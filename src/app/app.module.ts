@@ -6,10 +6,11 @@ import { AngularEditorModule } from '@kolkov/angular-editor';
 
 import { AppComponent } from './app.component';
 import { WeatherComponent } from './weather/weather.component';
+import { WeatherDetailsComponent } from './weather/weather-details/weather-details.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AngularEditorModule, HttpClientModule],
-  declarations: [AppComponent, WeatherComponent],
+  declarations: [AppComponent, WeatherComponent, WeatherDetailsComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

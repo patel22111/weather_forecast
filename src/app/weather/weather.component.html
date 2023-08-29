@@ -3,10 +3,15 @@
   <div class="page-body">
     <div class="page-body__sidebar">
       <ul class="cities-list">
-        <li class="cities-list__item" *ngFor="let city of cities">
+        <li
+          class="cities-list__item"
+          *ngFor="let city of cities"
+          (click)="onChooseCity(city)"
+        >
           {{ city.name }}
         </li>
       </ul>
+      <div class=""></div>
     </div>
   </div>
 </div>
