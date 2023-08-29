@@ -11,7 +11,12 @@
           {{ city.name }}
         </li>
       </ul>
-      <div class=""></div>
+    </div>
+    <div class="page-body__details">
+      <app-weather-details
+        *ngIf="chosenCity"
+        [forecast]="chosenCity.forecast"
+      ></app-weather-details>
     </div>
   </div>
 </div>
