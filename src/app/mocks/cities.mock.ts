@@ -20,6 +20,7 @@ export const CITIES: Array<City> = [
         },
       },
     },
+    selected: false,
   },
   {
     name: 'London',
@@ -40,6 +41,7 @@ export const CITIES: Array<City> = [
         },
       },
     },
+    selected: false,
   },
   {
     name: 'Tokyo',
@@ -60,5 +62,6 @@ export const CITIES: Array<City> = [
         },
       },
     },
+    selected: false,
   },
 ];
