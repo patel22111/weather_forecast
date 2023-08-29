@@ -18,13 +18,13 @@ export class WeatherComponent implements OnInit {
   }
 
   onChooseCity(city: City): void {
-    this.cities = this.cities.map((city1) => {
-      return { ...city1, selected: false };
-    });
-    const index = this.cities.findIndex(
-      (city2) => city2.name.toLowerCase() === city.name.toLowerCase()
-    );
-    this.cities[index] = { ...city, selected: true };
     this.chosenCity = city;
+    this.cities = this.cities.map((mCity) => {
+      return { ...mCity, selected: false };
+    });
+    let resCity = this.cities.find(
+      (fCity) => fCity.name.toLowerCase() === city.name.toLowerCase()
+    );
+    resCity.selected = true;
   }
 }

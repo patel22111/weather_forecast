@@ -1,23 +1,29 @@
 <div class="forecast">
   <div class="forecast-data">
     <div class="forecast-row">
+      <span class="forecast-row__title">Name: </span>
+      <span class="forecast-row__description">{{ city.name }}</span>
+    </div>
+    <div class="forecast-row">
       <span class="forecast-row__title">Conditions: </span>
-      <span class="forecast-row__description">{{ forecast.conditions }}</span>
+      <span class="forecast-row__description">{{
+        city.forecast.conditions
+      }}</span>
     </div>
     <div class="forecast-row">
       <span class="forecast-row__title">Temperature </span>
       <div class="forecast-subrow">
         <span class="forecast-subrow__title">Day: </span>
         <span class="forecast-subrow__description">
-          {{ forecast.temperature.day.min }}&#176; -
-          {{ forecast.temperature.day.max }}&#176;C
+          {{ city.forecast.temperature.day.min }}&#176; -
+          {{ city.forecast.temperature.day.max }}&#176;C
         </span>
       </div>
       <div class="forecast-subrow">
         <span class="forecast-subrow__title">Night: </span>
         <span class="forecast-subrow__description">
-          {{ forecast.temperature.night.min }}&#176; -
-          {{ forecast.temperature.night.max }}&#176;C
+          {{ city.forecast.temperature.night.min }}&#176; -
+          {{ city.forecast.temperature.night.max }}&#176;C
         </span>
       </div>
     </div>
@@ -26,13 +32,13 @@
       <div class="forecast-subrow">
         <span class="forecast-subrow__title">Speed: </span>
         <span class="forecast-subrow__description"
-          >{{ forecast.wind.speed }}mps</span
+          >{{ city.forecast.wind.speed }}mps</span
         >
       </div>
       <div class="forecast-subrow">
         <span class="forecast-subrow__title">Direction: </span>
         <span class="forecast-subrow__description">{{
-          forecast.wind.direction
+          city.forecast.wind.direction
         }}</span>
       </div>
     </div>
